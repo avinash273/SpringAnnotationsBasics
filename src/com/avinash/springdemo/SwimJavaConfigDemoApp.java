@@ -22,6 +22,7 @@ public class SwimJavaConfigDemoApp {
 
         //close the context
         //not necessary, will auto manage
+        //need to check
         context.close();
     }
 }
