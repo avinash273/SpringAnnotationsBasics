@@ -21,8 +21,6 @@ public class SwimJavaConfigDemoApp {
         System.out.println("team: " + theCoach.getTeam());
 
         //close the context
-        //not necessary, will auto manage
-        //need to check
         context.close();
     }
 }
