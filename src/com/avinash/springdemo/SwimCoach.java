@@ -7,10 +7,14 @@ public class SwimCoach implements Coach {
     private FortuneService fortuneService;
 
     @Value("${foo.email}")
-    private  String email;
+    private String email;
 
     @Value("${foo.team}")
-    private  String team;
+    private String team;
+
+    public void Drown() {
+        System.out.println("If you dont swim you will drown");
+    }
 
     public SwimCoach(FortuneService theFortuneService) {
         fortuneService = theFortuneService;
