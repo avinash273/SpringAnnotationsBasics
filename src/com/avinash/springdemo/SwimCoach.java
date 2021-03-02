@@ -25,6 +25,7 @@ public class SwimCoach implements Coach {
         return "Swim 10 Laps.";
     }
 
+    //override
     @Override
     public String getDailyFortune() {
         return fortuneService.getFortune();
