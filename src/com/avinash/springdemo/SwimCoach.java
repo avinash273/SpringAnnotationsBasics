@@ -45,5 +45,6 @@ public class SwimCoach implements Coach {
 
     public void setTeam(String team) {
         this.team = team;
+        System.out.println(this.team);
     }
 }
