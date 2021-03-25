@@ -1,6 +1,6 @@
 package com.avinash.designpatterns;
 
-class Container<T>{
+class Container<T extends Number>{
     T value;
 
     public T getValue() {
