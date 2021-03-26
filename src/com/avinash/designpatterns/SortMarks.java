@@ -36,10 +36,13 @@ public class SortMarks {
         marksSort.add(s7);
         marksSort.add(s8);
 
-        List<Student> top5 = marksSort.stream().sorted((p1, p2) -> p2.marks.compareTo(p1.marks)).limit(5).collect(Collectors.toList());
+        List<Student> top5 = marksSort.stream()
+                .sorted((p1, p2) -> p2.marks.compareTo(p1.marks))
+                .limit(5)
+                .collect(Collectors.toList());
 
         System.out.println("Top 5");
-        for(Student each : top5){
+        for (Student each : top5) {
             System.out.println(each.marks + " " + each.name);
         }
     }
